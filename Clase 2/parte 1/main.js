@@ -131,10 +131,10 @@ valor1 || valor2 es verdadero cuando al menos uno de los valores es verdadero, e
 //   alert("Ingresar nombre válido");
 // }
 
-let nombre = prompt("Ingrese el nombre").toLowerCase();
+// let nombre = prompt("Ingrese el nombre").toLowerCase();
 
-if (nombre != "" && nombre === "ema") {
-  alert("Hola Ema");
-} else {
-  alert("Ingresar nombre válido");
-}
+// if (nombre != "" && nombre === "ema") {
+//   alert("Hola Ema");
+// } else {
+//   alert("Ingresar nombre válido");
+// }
