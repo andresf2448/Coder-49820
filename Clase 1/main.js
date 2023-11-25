@@ -45,5 +45,7 @@ bloque
 // console.log(typeof 6);
 // console.log(typeof "andres");
 
-let edad = Number(prompt("Ingrese su edad"));
+let edad = Number("456756");
 alert(10 + edad);
+
+alert(edad)
