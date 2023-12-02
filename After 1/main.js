@@ -35,6 +35,7 @@
 // }
 
 let edad = prompt("ingrese la edad de su hijo")
+edad = parseFloat(edad);
 
 switch (edad) {
   case "1":
