@@ -96,35 +96,35 @@ estructura de un arreglo
 
 // console.log(productos);
 
-// const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
+const productos = ["galleta", "cafe", "mate", "leche", "fideos", "chocolate"];
 
-// const eliminarPorNombre = (nombre) => {
-//   let indice = productos.indexOf(nombre);
+const eliminarPorNombre = (nombre) => {
+  let indice = productos.indexOf(nombre);
 
-//   if (indice != -1) {
-//     productos.splice(indice, 1);
-//     console.log(productos);
-//   }
-// };
-
-// eliminarPorNombre("leche");
-
-const productos = [
-  { id: 1, nombre: "camisa", precio: 1000 },
-  { id: 2, nombre: "gorra", precio: 700 },
-  { id: 3, nombre: "zapato", precio: 350 },
-  { id: 4, nombre: "media", precio: 987 },
-];
-
-let productoEncontrado;
-for (const iterator of productos) {
-  if (iterator.nombre === "pantalon") {
-    productoEncontrado = iterator;
+  if (indice != -1) {
+    productos.splice(indice, 1);
+    console.log(productos);
   }
-}
+};
 
-if (productoEncontrado) {
-  console.log("Producto Encontrado");
-} else {
-  console.log("Producto no encontrado");
-}
+eliminarPorNombre("leche");
+
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "gorra", precio: 700 },
+//   { id: 3, nombre: "zapato", precio: 350 },
+//   { id: 4, nombre: "media", precio: 987 },
+// ];
+
+// let productoEncontrado;
+// for (const iterator of productos) {
+//   if (iterator.nombre === "pantalon") {
+//     productoEncontrado = iterator;
+//   }
+// }
+
+// if (productoEncontrado) {
+//   console.log("Producto Encontrado");
+// } else {
+//   console.log("Producto no encontrado");
+// }
