@@ -93,6 +93,45 @@ const generarAleatorio = (amplitud, desplazamiento) => {
 // console.log(generarAleatorio(7, 17));
 
 //hacer una algoritmo que genere nombres aleatorios de una arreglo dado
-let nombres = ["camila", "andres", "juan", "mario", "pedro", "carlitos"];
+// let nombres = ["camila", "andres", "juan", "mario", "pedro", "carlitos"];
 
+// const generarNombreAleatorio = () => {
+//   let index = Math.floor(Math.random() * nombres.length);
 
+//   return nombres[index];
+// };
+
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+// console.log(generarNombreAleatorio());
+
+//Date
+// console.log(Date());
+// console.log(new Date(2023, 11, 16));
+// const navidad = new Date(2023, 11, 24, 23, 59, 59);
+// console.log(navidad);
+
+// const navidad = new Date("December 24, 2023 23:59:59");
+// console.log(navidad);
+
+// console.log(navidad.toDateString());
+// console.log(navidad.toLocaleString());
+// console.log(navidad.toLocaleDateString());
+// console.log(navidad.toTimeString());
+// console.log(navidad.getFullYear());
+// console.log(navidad.getMonth());
+// console.log(navidad.getDay());
+
+const navidad = new Date("December 24, 2023");
+const hoy = new Date("December 16, 2023");
+
+console.log(navidad - hoy);
+const milisegundosPorDia = 86400000;
+
+console.log((navidad - hoy) / milisegundosPorDia);
