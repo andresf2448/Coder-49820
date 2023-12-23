@@ -84,3 +84,22 @@ let saludo = document.getElementById("saludo");
 //     saludo.className = "blanco";
 //   }
 // });
+
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let inputs = e.target.children; //HTMLCollection
+  // console.log(inputs[0].value);
+  // console.log(inputs[1].value);
+
+  if (!inputs[0].value.includes("@")) {
+    inputs[0].value = "";
+    alert("Debe contener el @");
+  }
+
+  if (inputs[1].value < 100) {
+    alert("debe ser mayor a 100")
+  }
+});
