@@ -100,6 +100,7 @@ formulario.addEventListener("submit", (e) => {
   }
 
   if (inputs[1].value < 100) {
+    inputs[1].value = 0;
     alert("debe ser mayor a 100")
   }
 });
