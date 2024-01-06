@@ -206,23 +206,73 @@ si operador1 es verdadero entonces operador1
 // const [a, c, b] = nombres;
 // console.log(a, b, c);
 
-const usuario = {
-  nombre: "juan",
-  edad: 45,
-  direccion: "AAV",
-  cabello: "rojo",
-  telefono: {
-    cel: {
-      cel1: 1234,
-      cel2: 6498
-    },
-    casa: {
-      casa1: 54,
-      casa2: 786
-    },
-    trabajo: {
-      trabajo1: 89,
-      trabajo2: 158515
-    },
-  },
+// const usuario = {
+//   nombre: "juan",
+//   edad: 45,
+//   direccion: "AAV",
+//   cabello: "rojo",
+//   telefono: {
+//     cel: {
+//       cel1: 1234,
+//       cel2: 6498,
+//     },
+//     casa: {
+//       casa1: 54,
+//       casa2: 786,
+//     },
+//     trabajo: {
+//       trabajo1: 89,
+//       trabajo2: 158515,
+//     },
+//   },
+// };
+
+// const {
+//   nombre: nombrePersona,
+//   edad: edadPersona,
+//   telefono: {
+//     cel: { cel1: celularCasa },
+//     casa: { casa1: telefonoCasa },
+//     trabajo: { trabajo1: telefonoTrabajo },
+//   },
+// } = usuario;
+
+// console.log(celularCasa, telefonoCasa, telefonoTrabajo);
+
+// const nombres = ["juan", "pedro", "matias"];
+// console.log(...nombres);
+// console.log(nombres.join(" "));
+
+// const numeros = [4, 4, 5, 7, 8, 7];
+// console.log(Math.min(...numeros));
+// console.log(Math.max(...numeros));
+
+//paso por valor
+// let nombre1 = "andres";
+// let nombre2 = nombre1;
+
+// nombre2 = "juan";
+// console.log(nombre1);
+
+//paso referencia
+// let persona1 = { nombre: "andres", edad: 56 };
+// let persona2 = {...persona1};
+// persona2.nombre = "juan";
+
+// console.log(persona1);
+
+// const usuario = { nombre: "pepito", edad: 54, direccion: "AV1" };
+// const usuario1 = {
+//   ...usuario,
+//   nombre: "juan",
+//   cabello: "rojo",
+// };
+
+// console.log(usuario1);
+
+const sumar = (...numeros) => {
+  console.log(numeros.reduce((acum, item) => acum + item, 0));
 };
+
+sumar(4, 5, 67, 8, 9, 6, 54, 33);
+sumar(4, 5, 67);
