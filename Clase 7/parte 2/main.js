@@ -201,6 +201,7 @@ const renderizarProductos = (productos) => {
         <h2>Id: ${item.id}</h2>
         <p>Nombre: ${item.nombre}</p>
         <b>$${item.precio}</b>
+        <img src="${item.imagen}" />
       `;
     contenedor.append(div);
   });
