@@ -1,0 +1,16 @@
+{
+  "name": "clase-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.3",
+    "random-messages-random": "^1.0.3"
+  }
+}
